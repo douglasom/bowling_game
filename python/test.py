@@ -21,7 +21,10 @@ class TestGame(unittest.TestCase):
         self.fail("Not yet implemented")
 
     def test_one_strike(self):
-        self.fail("Not yet implemented")
+        self.g.roll(10)
+        self.g.roll(2)
+        self.g.roll(1)
+        self.assertEqual(self.g.score(), 10 + 2*2 + 2*1)
 
     def test_perfect_game(self):
         self.fail("Not yet implemented")
