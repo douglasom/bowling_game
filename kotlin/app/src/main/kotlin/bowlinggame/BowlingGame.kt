@@ -1,5 +1,6 @@
 package bowlinggame
 
+<<<<<<< HEAD
 import java.util.*
 
 class BowlingGame {
@@ -65,5 +66,13 @@ class BowlingGame {
 
     fun score() : Int {
         return totalScore
+=======
+class BowlingGame {
+    fun roll(pins: Int) {
+    }
+
+    fun score() : Int {
+        return -1
+>>>>>>> master
     }
 }

@@ -38,32 +38,98 @@ class TestGame(unittest.TestCase):
             self.g.roll(10)
         self.assertEqual(self.g.score(), 300)
 
-    # def test_roll_of_greater_than_10_raises_error(self):
-    #     self.fail("Not yet implemented")
-    #
-    # def test_negative_roll_raises_error(self):
-    #     self.fail("Not yet implemented")
-    #
-    # def test_frame_rolls_in_sum_greater_than_10_raises_error(self):
-    #     self.fail("Not yet implemented")
-    #
-    # def test_more_than_21_rolls_raises_error(self):
-    #     self.fail("Not yet implemented")
-    #
-    # def test_a_roll_after_2_non_bonus_rolls_in_10th_frame_raises_error(self):
-    #     self.fail("Not yet implemented")
-    #
-    # def test_getting_score_with_11_strikes_raises_error(self):
-    #     self.fail("Not yet implemented")
-    #
-    # def test_getting_score_with_10_spares_and_missed_bonus_raises_error(self):
-    #     self.fail("Not yet implemented")
-    #
-    # def test_getting_score_with_19_ones_raises_error(self):
-    #     self.fail("Not yet implemented")
-    #
-    # def test_getting_score_with_4_ones_raises_error(self):
-    #     self.fail("Not yet implemented")
+    def test_dutch_200_even(self):
+        self.g.roll(9)
+        self.g.roll(1)
+
+        self.g.roll(10)
+
+        self.g.roll(9)
+        self.g.roll(1)
+
+        self.g.roll(10)
+
+        self.g.roll(9)
+        self.g.roll(1)
+
+        self.g.roll(10)
+
+        self.g.roll(9)
+        self.g.roll(1)
+
+        self.g.roll(10)
+
+        self.g.roll(9)
+        self.g.roll(1)
+
+        self.g.roll(10)
+        self.g.roll(9)
+        self.g.roll(1)
+
+        self.assertEqual(self.g.score(), 200)
+
+    def test_dutch_200_odd(self):
+        self.g.roll(10)
+
+        self.g.roll(9)
+        self.g.roll(1)
+
+        self.g.roll(10)
+
+        self.g.roll(9)
+        self.g.roll(1)
+
+        self.g.roll(10)
+
+        self.g.roll(9)
+        self.g.roll(1)
+
+        self.g.roll(10)
+
+        self.g.roll(9)
+        self.g.roll(1)
+
+        self.g.roll(10)
+
+        self.g.roll(9)
+        self.g.roll(1)
+        self.g.roll(10)
+
+        self.assertEqual(self.g.score(), 200)
+
+    def test_nine_spare_game(self):
+        self.g.roll(9)
+        self.g.roll(1)
+
+        self.g.roll(9)
+        self.g.roll(1)
+
+        self.g.roll(9)
+        self.g.roll(1)
+
+        self.g.roll(9)
+        self.g.roll(1)
+
+        self.g.roll(9)
+        self.g.roll(1)
+
+        self.g.roll(9)
+        self.g.roll(1)
+
+        self.g.roll(9)
+        self.g.roll(1)
+
+        self.g.roll(9)
+        self.g.roll(1)
+
+        self.g.roll(9)
+        self.g.roll(1)
+
+        self.g.roll(9)
+        self.g.roll(1)
+        self.g.roll(9)
+
+        self.assertEqual(self.g.score(), 190)
 
 
 if __name__ == '__main__':

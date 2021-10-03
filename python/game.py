@@ -3,11 +3,13 @@ class Game(object):
         self.total_score = 0
         self.current_roll = -1
         self.previous_roll = -1
-        self.frame = 1
+        self.frame = 0
         self.first_attempt_within_frame = True
         self.bonus = []
 
     def roll(self, pins):
+        if self.first_attempt_within_frame and self.frame < 10:
+            self.frame += 1
         self.current_roll = pins
         self.process_current_roll()
         self.prepare_bonus()
@@ -23,7 +25,6 @@ class Game(object):
     def prepare_bonus(self):
         if self.frame != 10:
             if self.first_attempt_within_frame:
-                self.frame += 1
                 if self.current_roll == 10:
                     self.prepare_strike_bonus()
                 else:
@@ -31,6 +32,7 @@ class Game(object):
             else:
                 if self.previous_roll + self.current_roll == 10:
                     self.prepare_spare_bonus()
+                self.first_attempt_within_frame = not self.first_attempt_within_frame
 
     def possible_spare_next_roll(self):
         self.previous_roll = self.current_roll
