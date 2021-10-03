@@ -26,13 +26,13 @@ class TestGame(unittest.TestCase):
     # def test_perfect_game(self):
     #     self.fail("Not yet implemented")
     #
-    # def dutch_200_even(self):
+    # def test_dutch_200_even(self):
     #     self.fail("Not yet implemented")
     #
-    # def dutch_200_odd(self):
+    # def test_dutch_200_odd(self):
     #     self.fail("Not yet implemented")
     #
-    # def nine_spare_game(self):
+    # def test_nine_spare_game(self):
     #     self.fail("Not yet implemented")
 
 
