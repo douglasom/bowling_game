@@ -1,9 +1,9 @@
 class Game(object):
     def __init__(self):
-        print("new game!")
+        pass
 
     def roll(self, pins):
-        print(f'rolling {pins}')
+        pass
 
     def score(self):
         return -1
