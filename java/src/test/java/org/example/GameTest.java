@@ -31,12 +31,12 @@ public class GameTest {
 //    }
 //
 //    @Test
-//    void singleSpare() {
+//    void oneSpare() {
 //        fail("Not implemented");
 //    }
 //
 //    @Test
-//    void singleStrike() {
+//    void oneStrike() {
 //        fail("Not implemented");
 //    }
 //

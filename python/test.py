@@ -17,10 +17,10 @@ class TestGame(unittest.TestCase):
     # def test_all_ones(self):
     #     self.fail("Not yet implemented")
     #
-    # def test_single_spare(self):
+    # def test_one_spare(self):
     #     self.fail("Not yet implemented")
     #
-    # def test_single_strike(self):
+    # def test_one_strike(self):
     #     self.fail("Not yet implemented")
     #
     # def test_perfect_game(self):

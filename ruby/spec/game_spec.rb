@@ -19,11 +19,11 @@ describe Game do
     #   fail 'Not implemented'
     # end
     #
-    # it 'computes a single spare' do
+    # it 'computes one spare' do
     #   fail 'Not implemented'
     # end
     #
-    # it 'computes a single strike' do
+    # it 'computes one strike' do
     #   fail 'Not implemented'
     # end
     #
