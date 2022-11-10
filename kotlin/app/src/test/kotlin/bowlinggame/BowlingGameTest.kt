@@ -14,12 +14,12 @@ class BowlingGameTest {
     }
 
     @Test
-    fun bowlingAllGuttersReturnsZeroScore() {
+    fun singlePin() {
         // Arrange
-        val expected = 0
+        val expected = 3
 
         // Act
-        game.roll(0)
+        game.roll(3)
         val actual = game.score()
 
         // Assert
@@ -27,7 +27,12 @@ class BowlingGameTest {
     }
 
 //    @Test
-//    fun singlePins() {
+//    fun gutterGame() {
+//        Assert.fail("implement");
+//    }
+//
+//    @Test
+//    fun allOnes() {
 //        Assert.fail("implement");
 //    }
 //

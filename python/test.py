@@ -8,8 +8,8 @@ class TestGame(unittest.TestCase):
         self.g = Game()
 
     def test_single_pin(self):
-        self.g.roll(1)
-        self.assertEqual(self.g.score(), 1)
+        self.g.roll(3)
+        self.assertEqual(self.g.score(), 3)
 
     # def test_gutter_game(self):
     #     self.fail("Not yet implemented")
@@ -17,10 +17,10 @@ class TestGame(unittest.TestCase):
     # def test_all_ones(self):
     #     self.fail("Not yet implemented")
     #
-    # def test_one_spare(self):
+    # def test_single_spare(self):
     #     self.fail("Not yet implemented")
     #
-    # def test_one_strike(self):
+    # def test_single_strike(self):
     #     self.fail("Not yet implemented")
     #
     # def test_perfect_game(self):
