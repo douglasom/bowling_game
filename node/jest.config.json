@@ -1,0 +1,12 @@
+{
+  "moduleFileExtensions": [
+    "js",
+    "jsx",
+    "tsx",
+    "ts"
+  ],
+  "rootDir": "src/tests/",
+  "transform": {
+    "^.+\\.(js|ts|tsx)?$": "../../node_modules/babel-jest"
+  }
+}
